@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flat Guardians</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Flat Guardians battle arena"></canvas>
+      <section id="hud" aria-live="polite"></section>
+      <div id="levelSelect" class="level-select hidden" aria-hidden="true">
+        <div class="glass">
+          <h2>Select Arena</h2>
+          <div id="levelsContainer" class="levels-grid"></div>
+          <div class="actions">
+            <button id="startLevel">Start</button>
+            <button id="closeLevel">Close</button>
+          </div>
+        </div>
+      </div>
+      <section class="legend">
+        <h1>Flat Guardians</h1>
+        <p>Defeat every geometric rogue together. Red = Player 1, Cyan = Player 2.</p>
+        <div class="controls">
+          <div>
+            <h2>Player 1 (Fire)</h2>
+            <p><strong>Move</strong> A / D</p>
+            <p><strong>Jump</strong> W</p>
+            <p><strong>Dash</strong> K</p>
+            <p><strong>Shoot</strong> J</p>
+          </div>
+          <div>
+            <h2>Player 2 (Ice)</h2>
+              <p><strong>Move</strong> Left / Right Arrows</p>
+            <p><strong>Jump</strong> Arrow Up</p>
+            <p><strong>Dash</strong> .</p>
+            <p><strong>Shoot</strong> Enter</p>
+          </div>
+        </div>
+        <p class="tip">Tip: Combo dashes and shots to juggle enemies before they overwhelm you.</p>
+      </section>
+    </main>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

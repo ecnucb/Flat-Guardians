@@ -1,0 +1,21 @@
+{
+  "name": "flat-guardians",
+  "version": "1.0.0",
+  "description": "Minimalist twin-guardian arcade inspired by Flat Heroes",
+  "type": "module",
+  "scripts": {
+    "start": "http-server . -c-1 -p 4173",
+    "test": "node tests/smoke.test.js"
+  },
+  "keywords": [
+    "html5",
+    "canvas",
+    "arcade",
+    "multiplayer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
